@@ -6,6 +6,7 @@ import UserModel from '@/model/User';
 
 
 
+
 export const authOptions: NextAuthOptions = {
     providers: [
         CredentialsProvider({
@@ -67,8 +68,8 @@ export const authOptions: NextAuthOptions = {
         }
     },
     pages: {
-        signIn: '/Sign-in',
-        error: '/Sign-in',
+        signIn: '/sign-in',
+        error: '/sign-in',
     },
     session: {
         strategy: 'jwt',
